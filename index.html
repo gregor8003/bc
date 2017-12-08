@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>BC</title>
+</head>
+<body>
+<p>
+<a href="http://{{ host }}:{{ port }}/blocks">http://{{ host }}:{{ port }}/blocks</a>
+</p>
+<p>
+<a href="http://{{ host }}:{{ port }}/peers">http://{{ host }}:{{ port }}/peers</a>
+</p>
+<p>
+<form action="/addPeer" method="post" accept-charset="utf-8"
+      enctype="application/x-www-form-urlencoded">
+    Peer: <input type="text" name="peer" />
+    <input type="submit" value="Add Peer"/>
+</form>
+</p>
+<p>
+<form action="/mineBlock" method="post" accept-charset="utf-8"
+      enctype="application/x-www-form-urlencoded">
+    Data: <input type="text" name="data" />
+    <input type="submit" value="Mine Block"/>
+</form>
+</p>
+</body>
+</html>
